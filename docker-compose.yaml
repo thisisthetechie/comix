@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  comix:
+    build:
+      context: .
+    secrets:
+      - source: SLACK_BOT_TOKEN
+        target: appToken
+      - source: SLACK_SIGNING_SECRET
+        target: appSecret
+
+secrets:
+  SLACK_BOT_TOKEN:
+    file: ./SLACK_BOT_TOKEN.txt
+  SLACK_SIGNING_SECRET:
+    file: ./SLACK_SIGNING_SECRET.txt

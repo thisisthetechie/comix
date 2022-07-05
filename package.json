@@ -1,0 +1,19 @@
+{
+  "name": "garfield",
+  "version": "1.0.0",
+  "description": "A slack bot to post Garfield Comics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pete Mallam",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/bolt": "^3.4.1",
+    "fetch": "^1.1.0",
+    "jQuery": "^1.7.4",
+    "node-fetch": "^2.6.1",
+    "node-html-parser": "^4.1.0",
+    "parsehtml": "^1.0.0"
+  }
+}
