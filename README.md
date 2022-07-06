@@ -1,24 +1,30 @@
 # gocomics
 
-This project will download the latest comic from GoComics and post it to slack
+This project will download comics from GoComics.com and post them to a slack channel
 
-## Required Variables
-Set up the following environment variables:
+## Required files
+In order to run this, you will need 2 files which are passed into the Docker Container as a secret file:
+* SLACK_BOT_TOKEN.txt
+* SLACK_SIGNING_SECRET.txt
 
-```sh
-export COMICNAME=[The Name of the comic]
-export SLACK_BOT_TOKEN=[The xoxb token for your bot in Slack]
-export SLACK_SIGNING_SECRET=[The Signing Secret for your Slack Bot]
-```
+These files should contain a single value, which is the respective key for your Slack Application
 
-## Usage
-You will need to first initialise the dependencies:
-```sh
-npm install
-```
+## Executing
 
-Then, run the main program:
+Run the main program:
 
 ```sh
-node index.js
+./comix.sh
 ```
+
+This will create a new docker container (if it doesn't already exist) and then parse a list of comics to fetch, posting them to your main channel
+
+## Configuration
+
+There is an array inside `comix.sh` which contains the names of the comics to read
+
+## Future
+
+This is pretty basic, I'll need to re-add in "other" comic search patterns and probably add some information on how to set up the Slack App.
+
+Would be good if I can have it automatically create and join a channel, rather than the mess that it currently goes through.
