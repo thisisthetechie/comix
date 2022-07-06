@@ -1,4 +1,4 @@
-# gocomics
+# comix
 
 This project will download comics from GoComics.com and post them to a slack channel
 
