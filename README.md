@@ -1,3 +1,4 @@
+![comix](comix.png?raw=true "comix")
 # comix
 
 This project will download comics from GoComics.com and post them to a slack channel
