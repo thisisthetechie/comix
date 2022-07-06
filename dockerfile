@@ -1,7 +1,7 @@
-FROM node
+FROM python:3
 
 COPY . .
 
-RUN npm install
-CMD ["node", "index.js"]
+RUN pip install -r requirements.txt
+CMD ["python", "comix.py"]
 

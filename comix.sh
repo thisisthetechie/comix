@@ -1,14 +1,20 @@
 # list of comix to retrieve
 comix=(
-    dilbert
     dilbert-classics
     garfield
+    garfield-classics
     buckles
     calvinandhobbes
     bc
     peanuts
     beardo
     overthehedge
+    andycapp
+    marmaduke
+    adult-children
+    offthemark
+    questionable-quotebook
+    wizardofid
 )
 
 # Retrieve each comic and post to Slack
